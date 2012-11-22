@@ -1,0 +1,433 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+    color: green;
+	font-family: Arial;
+}
+
+a {
+    font-size: 0.9em;
+    color: navy;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#serverTimer {
+    float: right;
+    vertical-align: middle;
+}
+
+.mainContainer {	
+    width: 810px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+} 
+
+#topNavContainer {
+    width: 810px;
+    height: 110px;
+    line-height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 10px solid greenyellow;
+    position: relative;
+}
+
+#topNavLinks {
+    float: left;
+}
+
+#topNavLinks a {
+    font-size: 1.5em;
+    color: blue; /*#0033CC;*/
+   
+}
+
+.redText {
+    color: red;
+    font-size: 25px;
+    font-family: fantasy;
+    font-style:  italic;
+}
+
+.grayText {
+    color: gray;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.blueText {
+    color: blue;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+#leftNav {
+    float: left;
+    position: relative;
+    width: 180px;
+    height: 400px;
+    font-size: 1.1em;
+}
+
+#leftNav ul {
+    margin-top: 10px;
+}
+
+#leftNav ul li {
+    padding-left: 20px;
+    margin-left: -25px;
+    list-style: none;
+    line-height: 20pxs;
+}
+
+#leftNav li {
+    background: url(../images/forward.png) no-repeat center left;
+}
+
+#leftNavCont {
+    margin-top: 10px;
+}
+
+#leftNavCont a{
+    color: #0033CC;
+}
+
+.leftNavHeader {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #CD0000;
+}
+
+.inputSelect {
+    height: 25px;
+    margin: 2px 2px 2px 0px;
+    width: 171px;
+    border: 1px solid gray;
+    padding: 3px;
+}
+
+.hiddenContainer {
+    display: none;
+    margin-left: 10px;
+}
+
+.inputField {
+    height: 20px;
+    margin: 2px 2px 2px 0px;
+    width: 166px;
+    text-align: left;
+    border: 1px solid gray;
+    padding-left: 3px;
+}
+
+.numInputField {
+    height: 20px;
+    margin: 2px 2px 2px 0px;
+    text-align: center;
+    border: 1px solid gray;
+    padding-left: 3px;
+}
+
+.newButton {	
+	height: 23px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	color: #FFFFFF;
+    background: url(../images/newButton.png) repeat-x;
+	border: 1px solid gray;
+	cursor: pointer;
+}
+
+.newButton:hover{    
+    border: 1px solid black;
+}
+
+.newButton:active{    
+    border: 1px solid black;
+    background: url(../images/newButton_Active.png) repeat-x;    
+}
+#contentContainer {
+    float: right;
+    width: 605px;
+    position: relative;
+    margin-bottom: 100px;
+    padding-left: 10px;
+    padding-bottom: 50px;
+    border-left: 1px solid gray;
+    min-height: 480px;
+}
+#footer {
+    width: 800px;
+    height: 100px;         /* contentContainer's margin-bottom should be equal to this value */
+/*    text-align: center;*/
+    font-size: 0.9em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid gray;
+}
+
+#devDiv {
+    position: relative;
+    float: left;
+}
+
+#versionDetailsDiv {
+    position: relative;
+    float: right;
+}
+
+#loginContainer {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #00C5CD;
+    border: 1px solid gray;
+    padding: 15px 30px 30px 30px;
+    margin-top: 50px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    behavior:url(../images/border-radius.htc);
+}
+
+#regContainer {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #00C5CD;
+    border: 1px solid gray;
+    padding: 15px 30px 30px 30px;
+    margin-top: 50px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    behavior:url(../images/border-radius.htc);
+}
+
+.newButton {	
+	height: 23px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	color: #FFFFFF;
+    background: url(../images/newButton.png) repeat-x;
+	border: 1px solid gray;
+	cursor: pointer;
+}
+
+.newButton:hover{    
+    border: 1px solid black;
+}
+
+.newButton:active{    
+    border: 1px solid black;
+    background: url(../images/newButton_Active.png) repeat-x;    
+}
+
+#campaignInfoDiv {
+    width: 175px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#replaceTable, #timeSelectCont, #campaignInfoButton {
+    display: none;
+}
+
+#fromDate, #toDate {
+    width: 80px;
+}
+
+#realDateContainer, #simDateContainer {
+    width: 400px;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    display: none;
+}
+
+#toDateContainer {
+    width: 330px;
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+
+.campaignListTable{
+    border-collapse: collapse;
+    border: 1px solid gray;
+    width: 600px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.campaignListTable td{
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+}
+.campaignListTable th{
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid grey;
+    border-bottom: 0;
+    empty-cells: show;
+    font-size: 1em;
+    height: 50px;
+    table-layout: fixed;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: #4F94CD;
+    color: #FFFFFF; 
+}
+
+.campaignListCat {
+    margin-left: 10;
+    margin-right: 10;
+    border: 1px solid grey;
+    border-bottom: 0;
+    empty-cells: show;
+    font-size: 1em;
+    width: 550px;
+    height: 50px;
+    table-layout: fixed;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: #4F94CD;
+    color: #FFFFFF;
+}
+
+.adminCampaignLines {
+    width: 600px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid gray;
+    empty-cells: show;
+    border-top: 1px solid gray;
+    table-layout: fixed;
+}
+
+.idTag {
+    width: 40px;
+}
+
+.campaignLines {
+    width: 600px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid gray;
+    empty-cells: show;
+    table-layout: fixed;
+    cursor: pointer;
+}
+
+#viewedSessionCont {
+    border: 1px solid #D1D1D1;
+    padding: 10px;
+}
+
+#createSessionCont {
+    position: relative;
+    float: left;
+}
+
+.closeSessionButton {
+    font-size: 12px;
+    color: red;
+    cursor: pointer;
+}
+
+.openSessionButton {
+    font-size: 12px;
+    color: blue;
+    cursor: pointer;
+}
+
+.messageList {
+    border-collapse: collapse;
+    border: 1px solid gray;
+    width: 600px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+#messageContainer {
+    margin-top: 20px;
+}
+
+#messageTitles {
+    position: relative;
+    float: left;
+    margin-right: 20px;
+}
+
+#messageInfo {
+    position: relative;
+}
+
+#messageContent {
+    border: 1px solid gray;
+    padding: 10px;
+    min-height: 50px;
+}
+
+.fromCol {
+    width: 100px;
+}
+
+.dateCol {
+    width: 100px;
+}
+
+#sendMessageTitles {
+    float: left;
+    margin-right: 20px;
+}
+
+#sendMessageText {
+    width: 300px;
+    height: 150px;
+    border: 1px solid gray;
+}
+
+.endTag {
+    width: 1px;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey; 
+    white-space:nowrap;
+}
+
+#fromDateContainer {
+    width: 270px;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    
+}
+
+#toDateContainer {
+    width: 250px;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 5px;
+   
+}
